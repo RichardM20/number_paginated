@@ -1,4 +1,4 @@
-# NumberPaginated
+# NumberPaginatedList
 
 [![pub package](https://img.shields.io/pub/v/number_paginated_list.svg)](https://pub.dev/packages/number_paginated_list)
 [![analysis](https://github.com/RichardM20/number_paginated/workflows/analysis/badge.svg)](https://github.com/RichardM20/number_paginated/actions)

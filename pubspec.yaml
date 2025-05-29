@@ -1,7 +1,8 @@
 name: number_paginated_list
 description: "A Flutter paginated list package"
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/RichardM20/number_paginated
+repository: https://github.com/RichardM20/number_paginated
 
 environment:
   sdk: ^3.7.2
@@ -17,8 +18,15 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+topics:
+  - paginator
+  - widget
+  - number_paginator
+  - paginated_list
+  - paginate_data
+
 screenshots:
-  - description: 'demo video preview'
+  - description: 'DemoVideoPreview'
     path: screenshots/demo.gif
   - description: 'NumberPaginated.listView'
     path: screenshots/paginated_list_view.png
