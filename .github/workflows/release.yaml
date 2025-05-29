@@ -2,7 +2,7 @@ name: Create GitHub Release
 
 on:
   workflow_run:
-    workflows: ["Publish Package"]
+    workflows: ["Deploy web"]
     types:
       - completed
 
