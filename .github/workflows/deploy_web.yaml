@@ -2,13 +2,13 @@ name: Deploy to web
 
 on:
   push:
-    branches:
-      - main 
+    branches: [ main ]
+    tags:
+      - '*'
 
 jobs:
   deploy-for-web:
     runs-on: ubuntu-latest
-    if: needs.package-analysis.result == 'success'
     steps:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
@@ -22,6 +22,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          BRANCH: gh-pages
-          FOLDER: example/build/web
-          CLEAN: true
+          BRANCH: gh-pages 
+          FOLDER: example/build/web  
+          CLEAN: true  
