@@ -11,11 +11,26 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
       - run: flutter pub get
-      - run: flutter pub publish --force --no-prepublish
+
+      - name: Check if version exists
+        id: check
+        run: |
+          VERSION=$(grep '^version:' pubspec.yaml | cut -d ' ' -f2 | tr -d '\r')
+          PACKAGE=$(grep '^name:' pubspec.yaml | cut -d ' ' -f2 | tr -d '\r')
+          
+          if curl -f -s "https://pub.dev/api/packages/$PACKAGE/versions/$VERSION" > /dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Publish to pub.dev
+        if: steps.check.outputs.exists == 'false'
+        run: flutter pub publish --force
         env:
           PUB_DEV_TOKEN: ${{ secrets.PUB_DEV_TOKEN }}
