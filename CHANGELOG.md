@@ -1,3 +1,3 @@
-## 0.0.1
+# v1.0.0 [28-05-2025]
 
-* TODO: Describe initial release.
+* TODO: The package is published with the initial stable release.
