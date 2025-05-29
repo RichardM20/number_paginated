@@ -18,7 +18,7 @@ jobs:
       - run: flutter pub get
       - name: Build for web
         working-directory: example/
-        run: flutter build web --release
+      - run: flutter build web --release --base-href=/number_paginated/
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
