@@ -10,10 +10,12 @@ This widget was developed in conjunction with the [number_paginator](https://git
 
 ## Preview
 
-![Demo](https://github.com/RichardM20/number_paginated/raw/main/screenshots/demo.gif)
-![Screenshot 1](https://github.com/RichardM20/number_paginated/raw/main/screenshots/paginated_list_view.png)
-![Screenshot 2](https://github.com/RichardM20/number_paginated/raw/main/screenshots/paginated_list_view_net.png)
-![Screenshot 3](https://github.com/RichardM20/number_paginated/raw/main/screenshots/paginated_list_grid.png)
+<p align="center">
+  <img src="https://github.com/RichardM20/number_paginated/raw/main/screenshots/demo.gif" width="220" />
+  <img src="https://github.com/RichardM20/number_paginated/raw/main/screenshots/paginated_list_view.png" width="220" />
+  <img src="https://github.com/RichardM20/number_paginated/raw/main/screenshots/paginated_list_view_net.png" width="220" />
+  <img src="https://github.com/RichardM20/number_paginated/raw/main/screenshots/paginated_list_grid.png" width="220" />
+</p>
 
 ## Features
 
