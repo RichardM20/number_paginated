@@ -21,16 +21,14 @@ dev_dependencies:
 topics:
   - paginator
   - widget
-  - number_paginator
-  - paginated_list
-  - paginate_data
+  - number-paginator
+  - paginated
+  - paginated-list
 
 screenshots:
   - description: 'DemoVideoPreview'
     path: screenshots/demo.gif
   - description: 'NumberPaginated.listView'
     path: screenshots/paginated_list_view.png
-  - description: 'NumberPaginated.listViewAsync'
-    path: screenshots/paginated_list_view_net.png
   - description: 'NumberPaginated.gridView'
     path: screenshots/paginated_list_grid.png

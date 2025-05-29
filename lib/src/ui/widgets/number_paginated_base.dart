@@ -74,9 +74,9 @@ class _NumberPaginatedBaseState<T> extends State<_NumberPaginatedBase<T>> {
     _paginatedListController = NumberPaginatedController(
       listData: data,
       limit: widget.limit,
-      totalCount: widget.totalCount
+      totalCount: widget.totalCount,
     );
-    
+
     _loadPage(0);
   }
 
@@ -129,7 +129,7 @@ class _NumberPaginatedBaseState<T> extends State<_NumberPaginatedBase<T>> {
     if (_dataStateManager.state != DataState.loaded) {
       return const SizedBox.shrink();
     }
- 
+
     return widget.paginatorBuilder != null
         ? widget.paginatorBuilder!(
           context,

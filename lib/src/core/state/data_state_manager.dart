@@ -1,4 +1,3 @@
-
 import 'package:number_paginated_list/src/core/state/data_state.dart';
 
 /// A simple state manager for handling data states in a Flutter application.
