@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/number_paginated_list.svg)](https://pub.dev/packages/number_paginated_list)
 [![analysis](https://github.com/RichardM20/number_paginated/workflows/analysis/badge.svg)](https://github.com/RichardM20/number_paginated/actions)
-[![demo](https://img.shields.io/badge/web-online-blue)](https://url.com)
+[![demo](https://img.shields.io/badge/web-online-blue)](https://richardm20.github.io/number_paginated/)
 
 A highly configurable numeric pagination widget for Flutter, perfect for managing large datasets from local lists or remote APIs. It provides a complete solution with support for ListView and GridView, including loading and error states, as well as fully customizable pagination controls.
 
