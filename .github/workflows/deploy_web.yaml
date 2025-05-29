@@ -18,13 +18,10 @@ jobs:
       - run: flutter pub get
       - name: Build for web
         working-directory: example/
-      - run: flutter build web --release --base-href=/number_paginated/
+        run: flutter build web --release --base-href=/number_paginated/
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           BRANCH: gh-pages
           FOLDER: example/build/web
           CLEAN: true
-          SINGLE_COMMIT: true
-          GIT_CONFIG_NAME: github-actions
-          GIT_CONFIG_EMAIL: github-actions@github.com
