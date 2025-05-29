@@ -18,7 +18,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 screenshots:
-  - description: 'demo'
+  - description: 'demo video preview'
     path: screenshots/demo.gif
   - description: 'NumberPaginated.listView'
     path: screenshots/paginated_list_view.png
