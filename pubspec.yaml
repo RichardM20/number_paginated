@@ -1,5 +1,5 @@
 name: number_paginated_list
-description: "A Flutter paginated list package"
+description: "description: A Flutter widget that displays a list with pagination controls and number-based navigation."
 version: 1.0.1
 homepage: https://github.com/RichardM20/number_paginated
 repository: https://github.com/RichardM20/number_paginated

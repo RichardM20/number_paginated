@@ -2,7 +2,6 @@ import 'package:example/api_call.dart';
 import 'package:example/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:number_paginated_list/number_paginated_list.dart';
- 
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
     title: 'Flutter Pagination Demo',
-    
+
     home: const PaginatedTabsPage(),
   );
 }
