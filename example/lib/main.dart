@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
     title: 'Flutter Pagination Demo',
-    theme: ThemeData(
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-    ),
+    
     home: const PaginatedTabsPage(),
   );
 }
